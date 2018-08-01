@@ -1,0 +1,63 @@
+{
+    "contextAI2": {
+        "type": "string"
+    },
+
+    "contextEQ": {
+        "type": "string"
+    },
+
+    "sourceAccNo": {
+        "type": "string"
+    },
+
+    "depositType": {
+        "type": "string"
+    },
+
+    "depositName": {
+        "type": "string"
+    },
+
+    "depositPeriod": {
+        "type": "string"
+    },
+            
+    "depositAmount": {
+        "type": "number",
+        "minimum": 0
+    },
+
+    "depositCurrency":  {
+        "type": "string",
+        "enum": ["PLN"]
+    },
+
+    "depositRenew": {
+        "type": "string",
+        "enum": ["YES", "NO"]
+    },
+    
+    "depositCapitalisation": {
+        "type": "string",
+        "enum": ["YES", "NO"]
+    },
+
+    "depositInterest": {
+        "type": "string"
+    },
+
+    "operationRefNo": {
+        "type": "string"
+    },
+
+    "operationStatus": {
+        "type": "string",
+        "enum": ["SUCCESS"]
+    },
+            
+    "authRequired": {
+        "type": "string",
+        "enum": ["YES", "NO"]
+    }
+}

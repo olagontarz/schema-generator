@@ -1,0 +1,63 @@
+{   
+    "contextAI2": {
+        "type": "string"
+    },
+
+    "contextEQ": {
+        "type": "string"
+    },
+
+    "sourceAccNo": {
+        "type": "string"
+    },
+
+    "destAccNo": {
+        "type": "string"
+    },
+
+    "destName": {
+        "type": "string"
+    },
+
+    "destName2": {
+        "type": "string"
+    },
+            
+    "operationDate": {
+        "type": "string",
+        "format": "date"
+    },
+
+    "operationAmount": {
+        "type": "number",
+        "minimum": 0
+    },
+
+    "operationCurrency":  {
+        "type": "string",
+        "enum": ["PLN"]
+    },
+
+    "operationTitle": {
+        "type": "string"
+    },
+
+    "operationRefNo": {
+        "type": "string"
+    },
+
+    "operationStatus": {
+        "type": "string",
+        "enum": ["ORDERED"]
+    },
+    
+    "authRequired": {
+        "type": "string",
+        "enum": ["YES", "NO"]
+    },
+
+    "authStatus": {
+        "type": "string",
+        "enum": ["SUCCESS"]
+    }
+}
