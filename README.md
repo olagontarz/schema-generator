@@ -5,7 +5,7 @@
 
 JSON schema to sposób definiowania formatów i walidowania przechodzących przez system eventów (obiektów JSON).
 
-Program schema-generator.js służy do automatycznego wygenerowania odpowiedniego pliku zawierającego JSON scheme na podstawie danych znajdujących się w pliku konfiguracyjnym. 
+Program *schema-generator.js* służy do automatycznego wygenerowania odpowiedniego pliku z JSON schema na podstawie informacji znajdujących się w pliku konfiguracyjnym *config.json*.
 
 Założenia, na których opiera się generator:
 * wszystkie eventy zawierają pewną wspólną część pól (wspólna sekcja *security*)
@@ -14,7 +14,7 @@ Założenia, na których opiera się generator:
 * w każdym evencie muszą wystąpić wszystkie zdefiniowane dla niego pola oraz nie mogą pojawić się w nim żadne nadmiarowe pola
 
 Plik *config.json* zawiera konfigurację do generatora zdefiniowaną w następujący sposób:
-* "common" - wartość tego pola wskazuje na plik JSON z definicjami pól wspólnych dla wszystkich typów eventów
+* "common" - wartość tego pola wskazuje na plik JSON z definicjami pól wspólnych (poza polem "eventType", które dodawane jest automatycznie) dla wszystkich typów eventów
 ```
 "common" : "./common.json"
 ```
@@ -56,4 +56,4 @@ Aby wygenerować plik JSON schema na podstawie zdefiniowanej w pliku config.json
 * z konsoli przejść do katalogu z kodem źródłowym
 * wykonać komendę ```node schema-generator.js```
 
-Wygnerowana schema pojawi się w pliku *schema.json* :)
+Wygnerowana schema pojawi się w pliku *schema.json* i może być zastosowana przy uruchomieniu [serwisu SOC](https://github.com/olagontarz/soc-service].
