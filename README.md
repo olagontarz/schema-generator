@@ -14,11 +14,11 @@ Założenia, na których opiera się generator:
 * w każdym evencie muszą wystąpić wszystkie zdefiniowane dla niego pola oraz nie mogą pojawić się w nim żadne nadmiarowe pola
 
 Plik *config.json* zawiera konfigurację do generatora zdefiniowaną w następujący sposób:
-* "common" - wartość tego pola wskazuje na plik JSON z definicjami pól wspólnych (poza polem "eventType", które dodawane jest automatycznie) dla wszystkich typów eventów
+* "common" - wartość tego pola wskazuje na plik JSON z definicjami pól wspólnych (poza polem "eventType", które dodawane jest automatycznie) dla wszystkich typów eventów:
 ```
 "common" : "./common.json"
 ```
-* "eventType" - to słownik wartości *eventType* i plik JSON z definicjami dodatkowych pól charakterystycznych dla danego typu eventu
+* "eventType" - to słownik wartości eventType i plik JSON z definicjami dodatkowych pól charakterystycznych dla danego typu eventu:
 ```
 "eventTypes": {
     "transfer": "./transfer.json", 
@@ -26,10 +26,10 @@ Plik *config.json* zawiera konfigurację do generatora zdefiniowaną w następuj
 }
 ```
 
-Ścieżki do plików z opisami pól odnoszą się względem pliku schema-generator.js (względność oznacza przedrostek "./" nazwy pliku).
+Ścieżki do plików z opisami pól są względem pliku *schema-generator.js* (względność ścieżki oznacza przedrostek "./").
 
 
-Pliki z definicjami pól to obiekty JSON z wypisanymi właściwościami i ich ograniczeniami m.in. zbiorem dopuszcalnych wartości, formatem itp. Więcej informacji na temat dopuszczalnych typów i restrykcji znajduje się [tutaj](https://cswr.github.io/JsonSchema/spec/basic_types/).
+Pliki z definicjami pól to obiekty JSON z wypisanymi właściwościami i ich ograniczeniami tj. zbiór dopuszczalnych wartości, format daty itp. Więcej informacji na temat dopuszczalnych typów i restrykcji znajduje się [tutaj](https://cswr.github.io/JsonSchema/spec/basic_types/). Kolejność definicji pól nie ma znaczenia.
 
 Na przykład, fragment pliku "common.json"
 ```
@@ -50,10 +50,10 @@ Na przykład, fragment pliku "common.json"
 }
 ```
 
-Aby wygenerować plik JSON schema na podstawie zdefiniowanej w pliku config.json konfiguracji oraz plików z opisami pól, należy:
+Aby wygenerować plik JSON schema na podstawie zdefiniowanej w *config.json* konfiguracji oraz plików z opisami pól, należy:
 * zainstalować Node JS
 * pobrać pliki źrodłowe z tego repozytorium
 * z konsoli przejść do katalogu z kodem źródłowym
 * wykonać komendę ```node schema-generator.js```
 
-Wygnerowana schema pojawi się w pliku *schema.json* i może być zastosowana przy uruchomieniu [serwisu SOC](https://github.com/olagontarz/soc-service).
+Wygnerowana schema pojawi się w pliku *schema.json* i może być zastosowana do walidacji eventów przychodzących do [serwisu SOC](https://github.com/olagontarz/soc-service).
