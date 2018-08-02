@@ -24,7 +24,7 @@ Plik *config.json* zawiera konfigurację do generatora zdefiniowaną w następuj
     "transfer": "./transfer.json", 
     "deposit": "./deposit.json" 
 }
-
+```
 
 Ścieżki do plików z opisami pól odnoszą się względem pliku schema-generator.js (względność oznacza przedrostek "./" nazwy pliku).
 
@@ -50,8 +50,10 @@ Na przykład, fragment pliku "common.json"
 }
 ```
 
-Aby wygenerować plik JSON schema na podstawie zdefiniowanej w pliku config.json confikuracji oraz plików z opisami pól, należy:
+Aby wygenerować plik JSON schema na podstawie zdefiniowanej w pliku config.json konfiguracji oraz plików z opisami pól, należy:
 * zainstalować Node JS
 * pobrać pliki źrodłowe z tego repozytorium
-* w konsoli, po przejściu do katalogu z plikami źródłowymi, wykonać komendę ```npm install```, a następnie ```node schema-generator.js```
-* wygnerowana schema pojawi się w pliku *schema.json*
+* z konsoli przejść do katalogu z kodem źródłowym
+* wykonać komendę ```node schema-generator.js```
+
+Wygnerowana schema pojawi się w pliku *schema.json* :)
