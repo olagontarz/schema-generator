@@ -56,4 +56,4 @@ Aby wygenerować plik JSON schema na podstawie zdefiniowanej w pliku config.json
 * z konsoli przejść do katalogu z kodem źródłowym
 * wykonać komendę ```node schema-generator.js```
 
-Wygnerowana schema pojawi się w pliku *schema.json* i może być zastosowana przy uruchomieniu [serwisu SOC](https://github.com/olagontarz/soc-service].
+Wygnerowana schema pojawi się w pliku *schema.json* i może być zastosowana przy uruchomieniu [serwisu SOC](https://github.com/olagontarz/soc-service).
