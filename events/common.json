@@ -1,0 +1,41 @@
+{
+    "logType": {
+        "type": "string",
+        "enum": ["INFO", "SECURITY", "ERROR", "WARN"]
+    },
+
+    "user": {
+        "type": "string"
+    },
+
+    "eventTime": {
+        "type": "string",
+        "format": "date-time"
+    },
+    
+    "sessionId": {
+        "type": "string"
+    },
+
+    "traceId": {
+        "type": "string"
+    },
+
+    "channel": {
+        "type": "string",
+        "enum": ["INTERNET", "MOBILE"]
+    },
+     
+    "ipAddress": {
+        "type": "string",
+        "format": "ipv4"
+    },
+
+    "browser": {
+        "type": "string"
+    },
+    
+    "fingerprint": {
+        "type": "string"
+    }
+}

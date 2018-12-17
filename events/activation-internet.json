@@ -1,0 +1,37 @@
+{   
+    "userId": {
+        "type": "string"
+    },
+
+    "userAI2": {
+        "type": "string"
+    },
+
+    "activationPath": {
+        "type": "string",
+        "enum": ["ACTIVE", "NEW", "MIGRATED", "RESET"]
+    },
+
+    "processStep": {
+        "type": "string",
+        "enum": ["START", "OTP-ENTER", "CHOOSE-METHOD", "DEFINE-METHOD", "ACTIVATE", "SET-ALIAS", "FINISH", "MULTI-PHONE", "CHOOSE-MASTER-PHONE", "SET-MASTER-PHONE", "HADES-TOKEN"]
+    },
+
+    "masterPhone": {
+        "type": "string"
+    },
+
+    "aliasName": {
+        "type": "string"
+    },
+
+    "statusAuth": {
+        "type": "string",
+        "enum": ["null", "SUCCESS", "FAILURE"]
+    },
+
+    "status": {
+        "type": "string",
+        "enum": ["ATTEMPT", "SUCCESS", "FAILURE", "TIMEOUT"]
+    }
+}

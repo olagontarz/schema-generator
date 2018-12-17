@@ -1,7 +1,0 @@
-{ 
-    "common" : "./common.json",
-    "eventTypes": {
-        "transfer": "./transfer.json", 
-        "deposit": "./deposit.json" 
-    }
-}

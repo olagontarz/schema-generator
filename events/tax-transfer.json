@@ -1,0 +1,109 @@
+{   
+    "userId": {
+        "type": "string"
+    },
+
+    "userAI2": {
+        "type": "string"
+    },
+
+    "contextEQ": {
+        "type": "string"
+    },
+
+    "sourceAccountNo": {
+        "type": "string"
+    },
+
+    "taxOfficeName": {
+        "type": "string"
+    },
+
+    "taxOfficeAddress": {
+        "type": "string"
+    },
+
+    "operationDate": {
+        "type": "string",
+        "format": "date"
+    },
+
+    "sourceName": {
+        "type": "string"
+    },
+
+    "sourceAddress": {
+        "type": "string"
+    },
+
+    "identificationType": {
+        "type": "string",
+        "enum": ["ID", "PESEL", "REGION", "NIP", "PASSPORT", "OTHER"]
+    },
+
+    "identificationNumber": {
+        "type": "string"
+    },
+
+    "year": {
+        "type": "string"
+    },
+
+    "periodType": {
+        "type": "string"
+    },
+
+    "periodNumber": {
+        "type": "string"
+    },
+
+    "obligationId": {
+        "type": "string"
+    },
+
+    "taxType": {
+        "type": "string"
+    },
+
+    "taxFormSymbol": {
+        "type": "string"
+    },
+
+    "destinationAccountNo": {
+        "type": "string"
+    },
+
+    "operationAmount": {
+        "type": "string"
+    },
+
+    "operationCurrency": {
+        "type": "string"
+    },
+  
+    "transferId": {
+        "type": "string"
+    },
+
+    "cenEQ": {
+        "type": "string"
+    },
+
+    "statusEQ": {
+        "type": "string"
+    },
+    
+    "descEQ": {
+        "type": "string"
+    },
+
+    "statusAuth": {
+        "type": "string",
+        "enum": ["null", "SUCCESS", "FAILURE"]
+    },
+
+    "status": {
+        "type": "string",
+        "enum": ["ATTEMPT", "SUCCESS", "FAILURE", "TIMEOUT"]
+    }
+}

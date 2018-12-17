@@ -1,5 +1,9 @@
 {   
-    "contextAI2": {
+    "userId": {
+        "type": "string"
+    },
+
+    "userAI2": {
         "type": "string"
     },
 
@@ -7,57 +11,54 @@
         "type": "string"
     },
 
-    "sourceAccNo": {
+    "sourceAccountNo": {
         "type": "string"
     },
 
-    "destAccNo": {
+    "destinationAccountNo": {
         "type": "string"
     },
 
-    "destName": {
-        "type": "string"
-    },
-
-    "destName2": {
-        "type": "string"
-    },
-            
     "operationDate": {
         "type": "string",
         "format": "date"
     },
 
     "operationAmount": {
-        "type": "number",
-        "minimum": 0
+        "type": "string"
     },
 
     "operationCurrency":  {
-        "type": "string",
-        "enum": ["PLN"]
+        "type": "string"
     },
 
     "operationTitle": {
         "type": "string"
     },
 
-    "operationRefNo": {
+    "transferId": {
         "type": "string"
     },
 
-    "operationStatus": {
-        "type": "string",
-        "enum": ["ORDERED"]
-    },
-    
-    "authRequired": {
-        "type": "string",
-        "enum": ["YES", "NO"]
+    "cenEQ": {
+        "type": "string"
     },
 
-    "authStatus": {
+    "statusEQ": {
+        "type": "string"
+    },
+    
+    "descEQ": {
+        "type": "string"
+    },
+
+    "statusAuth": {
         "type": "string",
-        "enum": ["SUCCESS"]
+        "enum": ["null", "SUCCESS", "FAILURE"]
+    },
+
+    "status": {
+        "type": "string",
+        "enum": ["ATTEMPT", "SUCCESS", "FAILURE", "TIMEOUT"]
     }
 }

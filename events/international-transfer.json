@@ -1,0 +1,107 @@
+{   
+    "userId": {
+        "type": "string"
+    },
+
+    "userAI2": {
+        "type": "string"
+    },
+
+    "contextEQ": {
+        "type": "string"
+    },
+
+    "sourceAccountNo": {
+        "type": "string"
+    },
+
+    "destinationAccountNo": {
+        "type": "string"
+    },
+
+    "destinationName": {
+        "type": "string"
+    },
+
+    "destinationAddress": {
+        "type": "string"
+    },
+
+    "destinationBankCode": {
+        "type": "string"
+    },
+
+    "destinationBankName": {
+        "type": "string"
+    },
+
+    "destinationBankCity": {
+        "type": "string"
+    },
+
+    "destinationBankNo": {
+        "type": "string"
+    },
+
+    "operationDate": {
+        "type": "string",
+        "format": "date"
+    },
+
+    "operationAmount": {
+        "type": "string"
+    },
+
+    "operationCurrency":  {
+        "type": "string"
+    },
+
+    "operationTitle": {
+        "type": "string"
+    },
+
+    "operationType": {
+        "type": "string",
+        "enum": ["STANDARD", "EXPRESS"]
+    },
+
+    "principalBankCommission": {
+        "type": "string",
+        "enum": ["SENDER", "BENEFICIARY"]
+    },
+
+    "correspondentBanksCommission": {
+        "type": "string",
+        "enum": ["SENDER", "BENEFICIARY"]
+    },
+
+    "commissionsAccount": {
+        "type": "string"
+    },
+
+    "transferId": {
+        "type": "string"
+    },
+
+    "cenEQ": {
+        "type": "string"
+    },
+
+    "statusEQ": {
+        "type": "string"
+    },
+    
+    "descEQ": {
+        "type": "string"
+    },
+
+    "statusAuth": {
+        "type": "string",
+        "enum": ["null", "SUCCESS", "FAILURE"]
+    },
+
+    "status": {
+        "type": "string",
+        "enum": ["ATTEMPT", "SUCCESS", "FAILURE", "TIMEOUT"]
+    }
+}

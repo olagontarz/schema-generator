@@ -1,0 +1,40 @@
+{   
+    "userId": {
+        "type": "string"
+    },
+
+    "userAI2": {
+        "type": "string"
+    },
+
+    "transactionType": {
+        "type": "string"
+    },
+
+    "authRef": {
+        "type": "string"
+    },
+
+    "authMethod": {
+        "type": "string",
+        "enum": ["SMS-OTP", "MOBILE-TOKEN"]
+    },
+
+    "deviceId": {
+        "type": "string"
+    },
+
+    "appId":  {
+        "type": "string"
+    },
+
+    "statusAuth": {
+        "type": "string",
+        "enum": ["null", "SUCCESS", "FAILURE"]
+    },
+
+    "status": {
+        "type": "string",
+        "enum": ["ATTEMPT", "SUCCESS", "FAILURE", "TIMEOUT", "RESTART"]
+    }
+}

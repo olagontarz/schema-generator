@@ -1,0 +1,40 @@
+{   
+    "userId": {
+        "type": "string"
+    },
+
+    "userAI2": {
+        "type": "string"
+    },
+
+    "authMethod": {
+        "type": "string",
+        "enum": ["SMS-OTP"]
+    },
+
+    "phone": {
+        "type": "string"
+    },
+
+    "smsContent":  {
+        "type": "string"
+    },
+
+    "otpCode": {
+        "type": "string"
+    },
+
+    "otpSeq":  {
+        "type": "string"
+    },
+
+    "otpDate": {
+        "type": "string",
+        "format": "date-time"
+    },
+
+    "status": {
+        "type": "string",
+        "enum": ["ATTEMPT", "SUCCESS", "FAILURE", "TIMEOUT"]
+    }
+}
