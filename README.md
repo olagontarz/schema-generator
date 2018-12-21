@@ -60,7 +60,7 @@ Wygnerowana schema pojawi się w pliku *schema.json* i może być zastosowana do
 
 
 
-## Generowanie parsera dla programu ArcSight
+## Generowanie parsera ArcSight
 
 Dodatkowo, na podstawie tego samego pliku konfiguracyjnego *config.js*, za pomocą programu *parser-generator.js* można wygenerować szkielet parsera interpretującego zgodne z definicjami typów eventy w programie ArcSight. 
 
