@@ -1,11 +1,11 @@
-# schema-generator
+# Schema Generator
 
 
 ## Generowanie pliku JSON schema
 
 JSON schema to sposób definiowania formatów i walidowania przechodzących przez system eventów (obiektów JSON).
 
-Program *schema-generator.js* służy do automatycznego wygenerowania odpowiedniego pliku z JSON schema na podstawie informacji znajdujących się w pliku konfiguracyjnym *config.json*.
+Program *schema-generator.js* służy do automatycznego wygenerowania odpowiedniego pliku z JSON schema na podstawie informacji znajdujących się w pliku konfiguracyjnym *config.js*.
 
 Założenia, na których opiera się generator:
 * wszystkie eventy zawierają pewną wspólną część pól (wspólna sekcja *security*)
@@ -13,47 +13,66 @@ Założenia, na których opiera się generator:
 * różne typy eventów zawierają różne dodatkowe pola (różne sekcje *business*)
 * w każdym evencie muszą wystąpić wszystkie zdefiniowane dla niego pola oraz nie mogą pojawić się w nim żadne nadmiarowe pola
 
-Plik *config.json* zawiera konfigurację do generatora zdefiniowaną w następujący sposób:
+Plik *config.js* zawiera konfigurację do generatora zdefiniowaną w następujący sposób:
 * "common" - wartość tego pola wskazuje na plik JSON z definicjami pól wspólnych (poza polem "eventType", które dodawane jest automatycznie) dla wszystkich typów eventów:
 ```
 "common" : "./common.json"
 ```
-* "eventType" - to słownik wartości eventType i plik JSON z definicjami dodatkowych pól charakterystycznych dla danego typu eventu:
+* "eventType" - to słownik wartości eventType - ścieżka do pliku JSON z definicjami dodatkowych pól charakterystycznych dla danego typu eventu:
 ```
 "eventTypes": {
-    "transfer": "./transfer.json", 
-    "deposit": "./deposit.json" 
+    'domestic-transfer': './events/domestic-transfer.json',
+    'international-transfer': './events/international-transfer.json',
+    ...
 }
 ```
 
-Ścieżki do plików z opisami pól są względem pliku *schema-generator.js* (względność ścieżki oznacza przedrostek "./").
+Ścieżki do plików z opisami pól są względem plików *schema-generator.js* oraz *parser-generator.js*. 
 
+Pliki z definicjalmi typów eventów znajdują się w folderze *events*. Są to obiekty JSON z wypisanymi właściwościami i ich ograniczeniami takimi jak np. zbiór dopuszczalnych wartości, format daty itp. Więcej informacji na temat dopuszczalnych typów i restrykcji znajduje się [tutaj](https://cswr.github.io/JsonSchema/spec/basic_types/). Kolejność definicji pól nie ma znaczenia.
 
-Pliki z definicjami pól to obiekty JSON z wypisanymi właściwościami i ich ograniczeniami tj. zbiór dopuszczalnych wartości, format daty itp. Więcej informacji na temat dopuszczalnych typów i restrykcji znajduje się [tutaj](https://cswr.github.io/JsonSchema/spec/basic_types/). Kolejność definicji pól nie ma znaczenia.
-
-Na przykład, fragment pliku "common.json"
+Na przykład, fragment pliku "common.json":
 ```
 {
-  ...
-  "sessionId": {
-        "type": "string"
-   },
-  "channel": {
+    ...
+    "channel": {
         "type": "string",
         "enum": ["INTERNET", "MOBILE"]
-   },
-   "startTime": {
+    },
+    "ipAddress": {
         "type": "string",
-        "format": "date-time"
+        "format": "ipv4"
+    },
+    "browser": {
+        "type": "string"
     },
    ...
 }
 ```
 
-Aby wygenerować plik JSON schema na podstawie zdefiniowanej w *config.json* konfiguracji oraz plików z opisami pól, należy:
+Aby wygenerować plik JSON schema na podstawie zdefiniowanej w *config.js* konfiguracji oraz plików z opisami pól, należy:
 * zainstalować Node JS
 * pobrać pliki źrodłowe z tego repozytorium
 * z konsoli przejść do katalogu z kodem źródłowym
 * wykonać komendę ```node schema-generator.js```
 
 Wygnerowana schema pojawi się w pliku *schema.json* i może być zastosowana do walidacji eventów przychodzących do [serwisu SOC](https://github.com/olagontarz/soc-service).
+
+
+
+## Generowanie parsera dla programu ArcSight
+
+Dodatkowo, na podstawie tego samego pliku konfiguracyjnego *config.js*, za pomocą programu *parser-generator.js* można wygenerować szkielet parsera interpretującego zgodne z definicjami typów eventy w programie ArcSight. 
+
+Do wygenerowanego szkieletu parsera należy dodać jedynie odpowiednie mapowanie pól dla tej części parametrów, które są zmienne z zależności od typu eventu.
+
+
+Aby wygenerować plik z parserem, na podstawie zdefiniowanej w *config.js* konfiguracji oraz plików z opisami pól, należy (analogicznie):
+* zainstalować Node JS
+* pobrać pliki źrodłowe z tego repozytorium
+* z konsoli przejść do katalogu z kodem źródłowym
+* wykonać komendę ```node parser-generator.js```
+
+Wygnerowana schema pojawi się w pliku *json_parser.properties*.
+
+
