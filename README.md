@@ -9,7 +9,7 @@ Program *schema-generator.js* służy do automatycznego wygenerowania odpowiedni
 
 Założenia, na których opiera się generator:
 * wszystkie eventy zawierają pewną wspólną część pól (wspólna sekcja *security*)
-* zawartość pola *eventType* definiuje typ przychodzącego eventu
+* zawartość pola "eventType" definiuje typ przychodzącego eventu
 * różne typy eventów zawierają różne dodatkowe pola (różne sekcje *business*)
 * w każdym evencie muszą wystąpić wszystkie zdefiniowane dla niego pola oraz nie mogą pojawić się w nim żadne nadmiarowe pola
 
@@ -50,7 +50,7 @@ Na przykład, fragment pliku "common.json":
 }
 ```
 
-Aby wygenerować plik JSON schema na podstawie zdefiniowanej w *config.js* konfiguracji oraz plików z opisami pól, należy:
+Aby wygenerować plik JSON schema na podstawie zdefiniowanej w *config.js* konfiguracji oraz plików z opisami pól należy:
 * zainstalować Node JS
 * pobrać pliki źrodłowe z tego repozytorium
 * z konsoli przejść do katalogu z kodem źródłowym
@@ -62,12 +62,12 @@ Wygnerowana schema pojawi się w pliku *schema.json* i może być zastosowana do
 
 ## Generowanie parsera ArcSight
 
-Dodatkowo, na podstawie tego samego pliku konfiguracyjnego *config.js*, za pomocą programu *parser-generator.js* można wygenerować szkielet parsera interpretującego zgodne z definicjami typów eventy w programie ArcSight. 
+Dodatkowo, na podstawie tego samego pliku konfiguracyjnego *config.js*, za pomocą programu *parser-generator.js* można wygenerować szkielet parsera interpretującego przychodzące eventy w programie ArcSight. 
 
-Do wygenerowanego szkieletu parsera należy dodać jedynie odpowiednie mapowanie pól dla tej części parametrów, które są zmienne z zależności od typu eventu.
+Do wygenerowanego szkieletu parsera należy dodać jedynie odpowiednie mapowanie pól dla tej części parametrów, które są zmienne w zależności od typu eventu.
 
 
-Aby wygenerować plik z parserem, na podstawie zdefiniowanej w *config.js* konfiguracji oraz plików z opisami pól, należy (analogicznie):
+Aby wygenerować plik z parserem, na podstawie zdefiniowanej w *config.js* konfiguracji oraz plików z opisami pól należy (analogicznie):
 * zainstalować Node JS
 * pobrać pliki źrodłowe z tego repozytorium
 * z konsoli przejść do katalogu z kodem źródłowym
