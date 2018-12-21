@@ -1,0 +1,36 @@
+{   
+    "userId": {
+        "type": "string"
+    },
+
+    "userAI2": {
+        "type": "string"
+    },
+
+    "contextEQ": {
+        "type": "string"
+    },
+
+    "cardType": {
+        "type": "string",
+        "enum": ["CREDIT", "DEBIT"]
+    },
+
+    "cardNo": {
+        "type": "string"
+    },
+
+    "blockadeReason": {
+        "type": "string"
+    },
+
+    "statusAuth": {
+        "type": "string",
+        "enum": ["null", "SUCCESS", "FAILURE"]
+    },
+
+    "status": {
+        "type": "string",
+        "enum": ["ATTEMPT", "SUCCESS", "FAILURE", "TIMEOUT"]
+    }
+}

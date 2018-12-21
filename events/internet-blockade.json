@@ -1,0 +1,34 @@
+{   
+    "userId": {
+        "type": "string"
+    },
+
+    "userAI2": {
+        "type": "string"
+    },
+
+    "transactionType": {
+        "type": "string"
+    },
+
+    "blockedBy": {
+        "type": "string"
+    },
+
+    "blockadeReason": {
+        "type": "string"
+    },
+
+    "maxAttempts": {
+        "type": "string"
+    },
+
+    "employeeId": {
+        "type": "string"
+    },
+
+    "status": {
+        "type": "string",
+        "enum": ["ATTEMPT", "SUCCESS", "FAILURE", "TIMEOUT"]
+    }
+}

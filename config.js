@@ -13,7 +13,9 @@ const config = {
     'send-sms-otp': './events/send-sms-otp.json',
     'activation-internet': './events/activation-internet.json',
     'card-activation': './events/card-activation.json',
+    'card-blocking': './events/card-blocking.json',
     'card-unblocking': './events/card-unblocking.json',
+    'internet-blockade': './events/internet-blockade.json',
   },
 };
 
