@@ -38,7 +38,7 @@
 
     "identificationType": {
         "type": "string",
-        "enum": ["ID", "PESEL", "REGION", "NIP", "PASSPORT", "OTHER"]
+        "enum": ["ID", "PESEL", "REGON", "NIP", "PASSPORT", "OTHER"]
     },
 
     "identificationNumber": {
