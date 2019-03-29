@@ -1,0 +1,33 @@
+{   
+    "method": {
+        "type": "string",
+        "enum": ["MASKED-PASSWORD", "UNMASKED-PASSWORD", "MOBILE-TOKEN", "2FA-MASKED-SMS", "2FA-UNMASKED-SMS", "2FA-MASKED-TOKEN", "2FA-UNMASKED-TOKEN"]
+    },
+
+    "newMethod": {
+        "type": "string",
+        "enum": ["MOBILE-TOKEN", "2FA-MASKED-SMS", "2FA-UNMASKED-SMS", "2FA-MASKED-TOKEN", "2FA-UNMASKED-TOKEN"]
+    },
+
+    "login": {
+        "type": "string"
+    },
+
+    "userId": {
+        "type": "string"
+    },
+
+    "userAI2": {
+        "type": "string"
+    },
+
+    "statusAuth": {
+        "type": "string",
+        "enum": ["null", "SUCCESS", "FAILURE"]
+    },
+
+    "status": {
+        "type": "string",
+        "enum": ["ATTEMPT", "SUCCESS", "FAILURE", "TIMEOUT"]
+    }
+}

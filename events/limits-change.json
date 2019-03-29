@@ -1,0 +1,44 @@
+{   
+    "userId": {
+        "type": "string"
+    },
+
+    "userAI2": {
+        "type": "string"
+    },
+
+    "contextEQ": {
+        "type": "string"
+    },
+
+    "oldDailyLimit": {
+        "type": "string"
+    },
+
+    "oldMonthlyLimit": {
+        "type": "string"
+    },
+
+    "newDailyLimit": {
+        "type": "string"
+    },
+
+    "newMonthlyLimit": {
+        "type": "string"
+    },
+
+    "channelType": {
+        "type": "string",
+        "enum":  ["INTERNET", "MOBILE"]
+    },
+
+    "statusAuth": {
+        "type": "string",
+        "enum": ["null", "SUCCESS", "FAILURE"]
+    },
+
+    "status": {
+        "type": "string",
+        "enum": ["ATTEMPT", "SUCCESS", "FAILURE", "TIMEOUT"]
+    }
+}
