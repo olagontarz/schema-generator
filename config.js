@@ -24,10 +24,10 @@ const config = {
     'card-limits-change': './events/card-limits-change.json',
     'alias-change': './events/alias-change.json',
     'password-change': './events/password-change.json',
-    'login-method-change': './events/login-method-change.json',
-    'antyphishing-image-change': './events/antyphishing-image-change.json',
+    '2FA-status-change': './events/2FA-status-change.json',
+    'antiphishing-image-change': './events/antiphishing-image-change.json',
     'limits-change': './events/limits-change.json',
-  }
+  },
 };
 
 module.exports = config;
