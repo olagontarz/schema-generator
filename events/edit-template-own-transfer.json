@@ -11,60 +11,51 @@
         "type": "string"
     },
 
-    "cardType": {
-        "type": "string",
-        "enum": ["CREDIT", "DEBIT"]
-    },
-
-    "cardNo": {
+    "newSourceAccountNo": {
         "type": "string"
     },
 
-    "posLimit": {
+    "sourceAccountNo": {
         "type": "string"
     },
 
-    "newPosLimit": {
+    "newDestinationAccountNo": {
         "type": "string"
     },
 
-    "cashLimit": {
+    "destinationAccountNo": {
         "type": "string"
     },
 
-    "newCashLimit": {
+    "newTemplateName": {
         "type": "string"
     },
 
-    "internetLimit": {
+    "templateName": {
         "type": "string"
     },
 
-    "newInternetLimit": {
+    "newOperationAmount": {
         "type": "string"
     },
 
-    "internetDailyNo": {
+    "operationAmount": {
         "type": "string"
     },
 
-    "newInternetDailyNo": {
+    "newOperationCurrency":  {
         "type": "string"
     },
 
-    "motoLimit": {
+    "operationCurrency":  {
         "type": "string"
     },
 
-    "newMotoLimit": {
+    "newOperationTitle": {
         "type": "string"
     },
 
-    "motoDailyNo": {
-        "type": "string"
-    },
-    
-    "newMotoDailyNo": {
+    "operationTitle": {
         "type": "string"
     },
 

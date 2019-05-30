@@ -11,40 +11,32 @@
         "type": "string"
     },
 
-    "cardType": {
+    "templateName": {
+        "type": "string"
+    },
+
+    "taxOfficeName": {
+        "type": "string"
+    },
+
+    "taxOfficeAddress": {
+        "type": "string"
+    },
+
+    "identificationType": {
         "type": "string",
-        "enum": ["CREDIT", "DEBIT"]
+        "enum": ["ID", "PESEL", "REGON", "NIP", "PASSPORT", "OTHER"]
     },
 
-    "cardNo": {
+    "identificationNumber": {
         "type": "string"
     },
 
-    "cardAccountNo": {
+    "operationAmount": {
         "type": "string"
     },
 
-    "sourceAccountNo": {
-        "type": "string"
-    },
-
-    "newSourceAccountNo": {
-        "type": "string"
-    },
-
-    "repayLevel": {
-        "type": "string"
-    },
-
-    "newRepayLevel": {
-        "type": "string"
-    },
-    
-    "repayAmount": {
-        "type": "string"
-    },
-
-    "newRepayAmount": {
+    "operationCurrency": {
         "type": "string"
     },
 

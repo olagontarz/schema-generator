@@ -1,0 +1,27 @@
+{   
+    "userId": {
+        "type": "string"
+    },
+
+    "userAI2": {
+        "type": "string"
+    },
+
+    "channel": {
+        "type": "string",
+        "enum": ["IVR"]
+    },
+
+    "login": {
+        "type": "string"
+    },
+
+    "hashMethod": {
+        "type": "string"
+    },
+
+    "status": {
+        "type": "string",
+        "enum": ["SUCCESS", "FAILURE", "TIMEOUT"]
+    }
+}

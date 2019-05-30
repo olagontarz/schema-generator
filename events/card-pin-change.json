@@ -20,34 +20,6 @@
         "type": "string"
     },
 
-    "cardAccountNo": {
-        "type": "string"
-    },
-
-    "sourceAccountNo": {
-        "type": "string"
-    },
-
-    "newSourceAccountNo": {
-        "type": "string"
-    },
-
-    "repayLevel": {
-        "type": "string"
-    },
-
-    "newRepayLevel": {
-        "type": "string"
-    },
-    
-    "repayAmount": {
-        "type": "string"
-    },
-
-    "newRepayAmount": {
-        "type": "string"
-    },
-
     "statusAuth": {
         "type": "string",
         "enum": ["null", "SUCCESS", "FAILURE"]

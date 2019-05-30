@@ -11,40 +11,19 @@
         "type": "string"
     },
 
-    "cardType": {
-        "type": "string",
-        "enum": ["CREDIT", "DEBIT"]
-    },
-
-    "cardNo": {
+    "tdNumber": {
         "type": "string"
     },
 
-    "cardAccountNo": {
+    "tdType": {
         "type": "string"
     },
 
-    "sourceAccountNo": {
+    "oldInterestAccount": {
         "type": "string"
     },
 
-    "newSourceAccountNo": {
-        "type": "string"
-    },
-
-    "repayLevel": {
-        "type": "string"
-    },
-
-    "newRepayLevel": {
-        "type": "string"
-    },
-    
-    "repayAmount": {
-        "type": "string"
-    },
-
-    "newRepayAmount": {
+    "newInterestAccount": {
         "type": "string"
     },
 

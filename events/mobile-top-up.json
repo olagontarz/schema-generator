@@ -11,40 +11,19 @@
         "type": "string"
     },
 
-    "cardType": {
-        "type": "string",
-        "enum": ["CREDIT", "DEBIT"]
-    },
-
-    "cardNo": {
-        "type": "string"
-    },
-
-    "cardAccountNo": {
-        "type": "string"
-    },
-
     "sourceAccountNo": {
         "type": "string"
     },
 
-    "newSourceAccountNo": {
+    "phoneNo": {
         "type": "string"
     },
 
-    "repayLevel": {
+    "operatorName": {
         "type": "string"
     },
 
-    "newRepayLevel": {
-        "type": "string"
-    },
-    
-    "repayAmount": {
-        "type": "string"
-    },
-
-    "newRepayAmount": {
+    "operationAmount": {
         "type": "string"
     },
 

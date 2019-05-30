@@ -1,0 +1,22 @@
+{   
+    "userId": {
+        "type": "string"
+    },
+
+    "userAI2": {
+        "type": "string"
+    },
+
+    "phone": {
+        "type": "string"
+    },
+
+    "pesel": {
+        "type": "string"
+    },
+
+    "status": {
+        "type": "string",
+        "enum": ["SUCCESS", "FAILURE", "TIMEOUT"]
+    }
+}

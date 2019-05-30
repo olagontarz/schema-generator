@@ -11,40 +11,15 @@
         "type": "string"
     },
 
-    "cardType": {
-        "type": "string",
-        "enum": ["CREDIT", "DEBIT"]
+    "billingCycle": {
+        "type": "string"
+    },
+
+    "newBillingCycle": {
+        "type": "string"
     },
 
     "cardNo": {
-        "type": "string"
-    },
-
-    "cardAccountNo": {
-        "type": "string"
-    },
-
-    "sourceAccountNo": {
-        "type": "string"
-    },
-
-    "newSourceAccountNo": {
-        "type": "string"
-    },
-
-    "repayLevel": {
-        "type": "string"
-    },
-
-    "newRepayLevel": {
-        "type": "string"
-    },
-    
-    "repayAmount": {
-        "type": "string"
-    },
-
-    "newRepayAmount": {
         "type": "string"
     },
 

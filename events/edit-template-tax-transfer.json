@@ -11,60 +11,61 @@
         "type": "string"
     },
 
-    "cardType": {
+    "newTemplateName": {
+        "type": "string"
+    },
+
+    "templateName": {
+        "type": "string"
+    },
+
+    "newTaxOfficeName": {
+        "type": "string"
+    },
+
+    "taxOfficeName": {
+        "type": "string"
+    },
+
+    "newTaxOfficeAddress": {
+        "type": "string"
+    },
+
+    "taxOfficeAddress": {
+        "type": "string"
+    },
+
+    "newIdentificationType": {
         "type": "string",
-        "enum": ["CREDIT", "DEBIT"]
+        "enum": ["ID", "PESEL", "REGON", "NIP", "PASSPORT", "OTHER"]
     },
 
-    "cardNo": {
+    "identificationType": {
+        "type": "string",
+        "enum": ["ID", "PESEL", "REGON", "NIP", "PASSPORT", "OTHER"]
+    },
+
+    "newIdentificationNumber": {
         "type": "string"
     },
 
-    "posLimit": {
+    "identificationNumber": {
         "type": "string"
     },
 
-    "newPosLimit": {
+    "newOperationAmount": {
         "type": "string"
     },
 
-    "cashLimit": {
+    "operationAmount": {
         "type": "string"
     },
 
-    "newCashLimit": {
+    "newOperationCurrency": {
         "type": "string"
     },
 
-    "internetLimit": {
-        "type": "string"
-    },
-
-    "newInternetLimit": {
-        "type": "string"
-    },
-
-    "internetDailyNo": {
-        "type": "string"
-    },
-
-    "newInternetDailyNo": {
-        "type": "string"
-    },
-
-    "motoLimit": {
-        "type": "string"
-    },
-
-    "newMotoLimit": {
-        "type": "string"
-    },
-
-    "motoDailyNo": {
-        "type": "string"
-    },
-    
-    "newMotoDailyNo": {
+    "operationCurrency": {
         "type": "string"
     },
 
