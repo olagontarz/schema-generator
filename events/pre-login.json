@@ -38,6 +38,14 @@
     "osLanguage": {
         "type": "string"
     },
+
+    "userId": {
+        "type": "string"
+    },
+
+    "userAI2": {
+        "type": "string"
+    },
     
     "login": {
         "type": "string"

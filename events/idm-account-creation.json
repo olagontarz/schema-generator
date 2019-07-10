@@ -10,5 +10,14 @@
     "status": {
         "type": "string",
         "enum": ["ATTEMPT", "SUCCESS", "FAILURE", "TIMEOUT"]
+    },
+
+    "operatorId": {
+        "type": "string"
+    },
+
+    "affectedChannel": {
+        "type": "string",
+        "enum": ["INTERNET", "MOBILE", "IVR"]
     }
 }

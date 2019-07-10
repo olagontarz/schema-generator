@@ -6,13 +6,18 @@
     "userAI2": {
         "type": "string"
     },
-
-    "channelIdm": {
-        "type": "string"
-    },
     
     "status": {
         "type": "string",
         "enum": ["SUCCESS", "FAILURE", "TIMEOUT"]
+    },
+
+    "operatorId": {
+        "type": "string"
+    },
+
+    "affectedChannel": {
+        "type": "string",
+        "enum": ["INTERNET", "MOBILE", "IVR"]
     }
 }

@@ -4,34 +4,37 @@ const config = {
   eventTypes: {
 
     'domestic-transfer': './events/domestic-transfer.json',
-    'add-template-domestic-transfer': './events/add-template-domestic-transfer.json',
-    'edit-template-domestic-transfer': './events/edit-template-domestic-transfer.json',
-
-    'mobile-top-up': './events/mobile-top-up.json',
+    'domestic-transfer-add-template': './events/domestic-transfer-add-template.json',
+    'domestic-transfer-edit-template': './events/domestic-transfer-edit-template.json',
 
     'international-transfer': './events/international-transfer.json',
 
     'tax-transfer': './events/tax-transfer.json',
-    'add-template-tax-transfer': './events/add-template-tax-transfer.json',
-    'edit-template-tax-transfer': './events/edit-template-tax-transfer.json',
+    'tax-transfer-add-template': './events/tax-transfer-add-template.json',
+    'tax-transfer-edit-template': './events/tax-transfer-edit-template.json',
 
     'own-transfer': './events/own-transfer.json',
-    'add-template-own-transfer': './events/add-template-own-transfer.json',
-    'edit-template-own-transfer': './events/edit-template-own-transfer.json',
+    'own-transfer-add-template': './events/own-transfer-add-template.json',
+    'own-transfer-edit-template': './events/own-transfer-edit-template.json',
+
+    'mobile-top-up': './events/mobile-top-up.json',
 
     'pre-login': './events/pre-login',
     'login': './events/login.json',
     'logout': './events/logout.json',
+
     'authorization': './events/authorization.json',
-    'send-sms-otp': './events/send-sms-otp.json',
-    'activation-internet': './events/activation-internet.json',
-    'internet-blockade': './events/internet-blockade.json',
+    'sms-otp': './events/sms-otp.json',
+
+    'internet-activation': './events/internet-activation.json',
+    'internet-blocking': './events/internet-blocking.json',
 
     'card-activation': './events/card-activation.json',
     'card-blocking': './events/card-blocking.json',
     'card-unblocking': './events/card-unblocking.json',
     'card-temporary-blocking': './events/card-temporary-blocking.json',
-    'card-pin-change': './events/card-pin-change.json',
+    'card-PIN-change': './events/card-pin-change.json',
+    'card-limits-change': './events/card-limits-change.json',
 
     'card-auto-repay-activation': './events/card-auto-repay-activation.json',
     'card-auto-repay-deactivation': './events/card-auto-repay-deactivation.json',
@@ -42,13 +45,12 @@ const config = {
 
     'edit-billing-cycle': './events/edit-billing-cycle.json',
 
-    'card-limits-change': './events/card-limits-change.json',
-
+    'limits-change': './events/limits-change.json',
     'alias-change': './events/alias-change.json',
     'password-change': './events/password-change.json',
+    'password-reset': './events/password-change.json',
     '2FA-status-change': './events/2FA-status-change.json',
     'antiphishing-image-change': './events/antiphishing-image-change.json',
-    'limits-change': './events/limits-change.json',
 
     'td-break': './events/td-break.json',
     'td-renewal-change': './events/td-renewal-change.json',
@@ -56,13 +58,15 @@ const config = {
     'td-interest-account-change': './events/td-interest-account-change.json',
     'td-capitalization-change': './events/td-capitalization-change.json',
 
-    'login-ivr': './events/login-ivr.json',
-    'create-idm-account': './events/create-idm-account.json',
-    'activation-channel': './events/activation-channel.json',
-    'channel-blockade': './events/channel-blockade.json',
+    'ivr-login': './events/ivr-login.json',
     'ivr-pin-reset': './events/ivr-pin-reset.json',
 
-    'login-sidoma': './events/login-sidoma.json',
+    'idm-account-creation': './events/idm-account-creation.json',
+    'idm-channel-activation': './events/idm-channel-activation.json',
+    'idm-channel-blocking': './events/idm-channel-blocking.json',
+    'idm-channel-unblocking': './events/idm-channel-unblocking.json',
+
+    'sidoma-login': './events/sidoma-login.json',
 
   },
 };

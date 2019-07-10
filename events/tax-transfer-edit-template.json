@@ -37,12 +37,12 @@
 
     "newIdentificationType": {
         "type": "string",
-        "enum": ["ID", "PESEL", "REGON", "NIP", "PASSPORT", "OTHER"]
+        "enum": ["ID_CARD", "PESEL", "REGON", "NIP", "PASSPORT", "OTHER"]
     },
 
     "identificationType": {
         "type": "string",
-        "enum": ["ID", "PESEL", "REGON", "NIP", "PASSPORT", "OTHER"]
+        "enum": ["ID_CARD", "PESEL", "REGON", "NIP", "PASSPORT", "OTHER"]
     },
 
     "newIdentificationNumber": {

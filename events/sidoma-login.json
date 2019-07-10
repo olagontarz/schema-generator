@@ -7,6 +7,10 @@
         "type": "string"
     },
 
+    "sidomaId": {
+        "type": "string"
+    },
+
     "status": {
         "type": "string",
         "enum": ["ATTEMPT", "SUCCESS", "FAILURE", "TIMEOUT"]

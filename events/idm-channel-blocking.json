@@ -7,20 +7,25 @@
         "type": "string"
     },
 
-    "channel": {
+    "affectedChannel": {
+        "type": "string",
+        "enum": ["INTERNET", "MOBILE", "IVR"]
+    },
+
+    "blockReason": {
         "type": "string"
     },
 
-    "blockadeReason": {
-        "type": "string"
-    },
-
-    "maxAttempts": {
+    "incorrectAttempts": {
         "type": "string"
     },
 
     "status": {
         "type": "string",
         "enum": ["SUCCESS", "FAILURE", "TIMEOUT"]
+    },
+
+    "operatorId": {
+        "type": "string"
     }
 }

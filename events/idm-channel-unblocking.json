@@ -7,16 +7,17 @@
         "type": "string"
     },
 
-    "phone": {
-        "type": "string"
-    },
-
-    "pesel": {
-        "type": "string"
+    "affectedChannel": {
+        "type": "string",
+        "enum": ["INTERNET", "MOBILE", "IVR"]
     },
 
     "status": {
         "type": "string",
         "enum": ["SUCCESS", "FAILURE", "TIMEOUT"]
+    },
+
+    "operatorId": {
+        "type": "string"
     }
 }

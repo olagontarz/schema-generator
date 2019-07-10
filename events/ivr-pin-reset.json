@@ -7,11 +7,6 @@
         "type": "string"
     },
 
-    "channel": {
-        "type": "string",
-        "enum": ["IVR"]
-    },
-
     "login": {
         "type": "string"
     },
@@ -23,5 +18,18 @@
     "status": {
         "type": "string",
         "enum": ["SUCCESS", "FAILURE", "TIMEOUT"]
+    },
+
+    "operatorId": {
+        "type": "string"
+    },
+
+    "pinType": {
+        "type": "string",
+        "enum": ["CLIENT", "RANDOM"]
+    },
+
+    "phoneNumber": {
+        "type": "string"
     }
 }

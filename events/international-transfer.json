@@ -31,14 +31,6 @@
         "type": "string"
     },
 
-    "destinationBankName": {
-        "type": "string"
-    },
-
-    "destinationBankCity": {
-        "type": "string"
-    },
-
     "destinationBankNo": {
         "type": "string"
     },
@@ -60,9 +52,9 @@
         "type": "string"
     },
 
-    "operationType": {
+    "paymentMode": {
         "type": "string",
-        "enum": ["STANDARD", "EXPRESS"]
+        "enum": ["STANDARD", "INSTANT", "URGENT"]
     },
 
     "principalBankCommission": {
