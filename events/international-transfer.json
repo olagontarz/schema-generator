@@ -52,11 +52,6 @@
         "type": "string"
     },
 
-    "paymentMode": {
-        "type": "string",
-        "enum": ["STANDARD", "INSTANT", "URGENT"]
-    },
-
     "principalBankCommission": {
         "type": "string",
         "enum": ["SENDER", "BENEFICIARY"]
@@ -87,6 +82,11 @@
         "type": "string"
     },
 
+    "paymentMode": {
+        "type": "string",
+        "enum": ["STANDARD", "INSTANT", "URGENT"]
+    },
+    
     "statusAuth": {
         "type": "string",
         "enum": ["null", "SUCCESS", "FAILURE"]

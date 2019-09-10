@@ -15,7 +15,7 @@
         "type": "string"
     },
 
-    "blockReason": {
+    "blockadeReason": {
         "type": "string"
     },
 

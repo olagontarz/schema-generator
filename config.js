@@ -48,7 +48,7 @@ const config = {
     'limits-change': './events/limits-change.json',
     'alias-change': './events/alias-change.json',
     'password-change': './events/password-change.json',
-    'password-reset': './events/password-change.json',
+    'password-reset': './events/password-reset.json',
     '2FA-status-change': './events/2FA-status-change.json',
     'antiphishing-image-change': './events/antiphishing-image-change.json',
 
@@ -66,7 +66,7 @@ const config = {
     'idm-channel-blocking': './events/idm-channel-blocking.json',
     'idm-channel-unblocking': './events/idm-channel-unblocking.json',
 
-    'sidoma-login': './events/sidoma-login.json',
+    'login-sidoma': './events/login-sidoma.json',
 
   },
 };
