@@ -14,10 +14,5 @@
 
     "operatorId": {
         "type": "string"
-    },
-
-    "affectedChannel": {
-        "type": "string",
-        "enum": ["INTERNET", "MOBILE", "IVR"]
     }
 }
