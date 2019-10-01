@@ -51,6 +51,11 @@
         "type": "string"
     },
 
+    "imageLogin": {
+        "type": "string",
+        "enum": ["YES", "NO"]
+    },
+
     "userStatus": {
         "type": "string",
         "enum": ["UNKNOWN", "INACTIVE", "BLOCKED", "ACTIVE", "ACTIVATION-UNABLE", "REPOCR-INVALID-BRAND", "REPOCR-AI2KEY-NOT-FOUND", "REPOCR-INTERNAL-ERROR"]

@@ -1,4 +1,8 @@
 {   
+    "login": {
+        "type": "string"
+    },
+
     "userId": {
         "type": "string"
     },
@@ -7,20 +11,14 @@
         "type": "string"
     },
 
-    "contextEQ": {
-        "type": "string"
+    "imageType": {
+        "type": "string",
+        "enum": ["IMAGE", "INITIALS"]
     },
 
-    "cardType": {
-        "type": "string"
-    },
-
-    "cardNo": {
-        "type": "string"
-    },
-
-    "blockadeReason": {
-        "type": "string"
+    "actionType": {
+        "type": "string",
+        "enum": ["ADD", "CHANGE", "REMOVE"]
     },
 
     "statusAuth": {
@@ -32,4 +30,4 @@
         "type": "string",
         "enum": ["ATTEMPT", "SUCCESS", "FAILURE", "TIMEOUT"]
     }
-}
+} 

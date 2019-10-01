@@ -19,6 +19,10 @@
         "type": "string"
     },
 
+    "cardType": {
+        "type": "string"
+    },
+
     "cardNo": {
         "type": "string"
     },

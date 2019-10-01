@@ -50,7 +50,9 @@ const config = {
     'password-change': './events/password-change.json',
     'password-reset': './events/password-reset.json',
     '2FA-status-change': './events/2FA-status-change.json',
+
     'antiphishing-image-change': './events/antiphishing-image-change.json',
+    'login-image-change': './events/login-image-change.json',
 
     'td-break': './events/td-break.json',
     'td-renewal-change': './events/td-renewal-change.json',

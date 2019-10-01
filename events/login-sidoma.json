@@ -7,21 +7,8 @@
         "type": "string"
     },
 
-    "contextEQ": {
+    "sidomaId": {
         "type": "string"
-    },
-
-    "cardType": {
-        "type": "string"
-    },
-
-    "cardNo": {
-        "type": "string"
-    },
-
-    "statusAuth": {
-        "type": "string",
-        "enum": ["null", "SUCCESS", "FAILURE"]
     },
 
     "status": {
