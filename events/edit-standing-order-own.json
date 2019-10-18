@@ -1,0 +1,170 @@
+{   
+    "userId": {
+        "type": "string"
+    },
+
+    "userAI2": {
+        "type": "string"
+    },
+
+    "contextEQ": {
+        "type": "string"
+    },
+
+    "newSourceAccountNo": {
+        "type": "string"
+    },
+
+    "sourceAccountNo": {
+        "type": "string"
+    },
+
+    "newDestinationAccountNo": {
+        "type": "string"
+    },
+
+    "destinationAccountNo": {
+        "type": "string"
+    },
+
+    "newStartDate": {
+        "type": "string",
+        "format": "date"
+    },
+
+    "startDate": {
+        "type": "string",
+        "format": "date"
+    },
+
+    "newEndDate": {
+        "type": "string",
+        "format": "date"
+    },
+
+    "endDate": {
+        "type": "string",
+        "format": "date"
+    },
+
+    "newPeriodType": {
+        "type": "string",
+        "enum": ["DAY", "WEEK", "MONTH", "QUARTER", "YEAR"]
+    },
+     
+    "periodType": {
+        "type": "string",
+        "enum": ["DAY", "WEEK", "MONTH", "QUARTER", "YEAR"]
+    },
+
+    "newPeriodsBetweenPayments": {
+        "type": "string"
+    },
+
+    "periodsBetweenPayments": {
+        "type": "string"
+    },
+
+    "newHolidayHandling": {
+        "type": "string"
+    },
+
+    "holidayHandling": {
+        "type": "string"
+    },
+
+    "newIsSuspended":  {
+        "type": "string"
+    },
+
+    "isSuspended":  {
+        "type": "string"
+    },
+
+    "newPaymentRetryDays": {
+        "type": "string"
+    },
+
+    "paymentRetryDays": {
+        "type": "string"
+    },
+
+    "newInstructedAmountMode":  {
+        "type": "string"
+    },
+
+    "instructedAmountMode":  {
+        "type": "string"
+    },
+
+    "newRegularOperationAmount": {
+        "type": "string"
+    },
+
+    "regularOperationAmount": {
+        "type": "string"
+    },
+
+    "newBalancePercentage":  {
+        "type": "string"
+    },
+
+    "balancePercentage":  {
+        "type": "string"
+    },
+
+    "newSurplusOver": {
+        "type": "string"
+    },
+
+    "surplusOver": {
+        "type": "string"
+    },
+
+    "newFirstOperationAmount":  {
+        "type": "string"
+    },
+
+    "firstOperationAmount":  {
+        "type": "string"
+    },
+
+    "newLastOperationAmount": {
+        "type": "string"
+    },
+
+    "lastOperationAmount": {
+        "type": "string"
+    },
+
+    "newOperationCurrency":  {
+        "type": "string"
+    },
+
+    "operationCurrency":  {
+        "type": "string"
+    },
+
+    "newOperationTitle": {
+        "type": "string"
+    },
+
+    "operationTitle": {
+        "type": "string"
+    },
+
+    "settlementSystem":  {
+        "type": "string",
+        "enum": ["INTERNAL", "ELIXIR", "SORBNET"]
+    },
+
+    "statusAuth": {
+        "type": "string",
+        "enum": ["null", "SUCCESS", "FAILURE"]
+    },
+
+    "status": {
+        "type": "string",
+        "enum": ["ATTEMPT", "SUCCESS", "FAILURE", "TIMEOUT"]
+    }
+}

@@ -1,0 +1,53 @@
+{   
+    "userId": {
+        "type": "string"
+    },
+
+    "userAI2": {
+        "type": "string"
+    },
+
+    "contextEQ": {
+        "type": "string"
+    },
+
+    "oldCafOptOut": {
+        "type": "string",
+        "enum": ["TRUE", "FALSE"]
+    },
+
+    "oldAisOptOut": {
+        "type": "string",
+        "enum": ["TRUE", "FALSE"]
+    },
+
+    "oldPisOptOut": {
+        "type": "string",
+        "enum": ["TRUE", "FALSE"]
+    },
+
+    "newCafOptOut": {
+        "type": "string",
+        "enum": ["TRUE", "FALSE"]
+    },
+
+    "newAisOptOut": {
+        "type": "string",
+        "enum": ["TRUE", "FALSE"]
+    },
+
+    "newPisOptOut": {
+        "type": "string",
+        "enum": ["TRUE", "FALSE"]
+    },
+
+    "statusAuth": {
+        "type": "string",
+        "enum": ["null", "SUCCESS", "FAILURE"]
+    },
+
+    "status": {
+        "type": "string",
+        "enum": ["ATTEMPT", "SUCCESS", "FAILURE", "TIMEOUT"]
+    }
+}

@@ -3,6 +3,8 @@ const config = {
   common: './events/common.json',
   eventTypes: {
 
+    // logs.xlsx
+
     'domestic-transfer': './events/domestic-transfer.json',
     'domestic-transfer-add-template': './events/domestic-transfer-add-template.json',
     'domestic-transfer-edit-template': './events/domestic-transfer-edit-template.json',
@@ -46,6 +48,7 @@ const config = {
     'edit-billing-cycle': './events/edit-billing-cycle.json',
 
     'limits-change': './events/limits-change.json',
+    'opt-out-change': './events/opt-out-change.json',
     'alias-change': './events/alias-change.json',
     'password-change': './events/password-change.json',
     'password-reset': './events/password-reset.json',
@@ -70,6 +73,18 @@ const config = {
 
     'login-sidoma': './events/login-sidoma.json',
 
+    // logs2.xlsx
+
+    'epayments-transfer': './events/epayments-transfer.json',
+
+    'add-standing-order-domestic': './events/add-standing-order-domestic.json',
+    'edit-standing-order-domestic': './events/edit-standing-order-domestic.json',
+    'cancel-standing-order-domestic': './events/cancel-standing-order-domestic.json',
+
+    'add-standing-order-own': './events/add-standing-order-own.json',
+    'edit-standing-order-own': './events/edit-standing-order-own.json',
+    'cancel-standing-order-own': './events/cancel-standing-order-own.json',
+  
   },
 };
 
