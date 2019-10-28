@@ -85,6 +85,9 @@ const config = {
     'edit-standing-order-own': './events/edit-standing-order-own.json',
     'cancel-standing-order-own': './events/cancel-standing-order-own.json',
   
+    'funds-acquisition': './events/funds-acquisition.json',
+    'funds-redemption': './events/funds-redemption.json',
+    'funds-conversion': './events/funds-conversion.json',
   },
 };
 

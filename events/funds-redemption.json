@@ -1,0 +1,63 @@
+{   
+    "userId": {
+        "type": "string"
+    },
+
+    "userAI2": {
+        "type": "string"
+    },
+
+    "shortFundName": {
+        "type": "string"
+    },
+
+    "value": {
+        "type": "string"
+    },
+
+    "idmId": {
+        "type": "string"
+    },
+
+    "confirmationType": {
+        "type": "string",
+        "enum": ["PAPER", "ELECTRONIC"]
+    },
+
+    "currency": {
+        "type": "string"
+    },
+
+    "email": {
+        "type": "string"
+    },
+            
+    "date": {
+        "type": "string",
+        "format": "date"
+    },
+
+    "redemptionType":  {
+        "type": "string",
+        "enum": ["ALL", "PART"]
+    },
+
+    "type":  {
+        "type": "string",
+        "enum": ["AMOUNT", "UNITS_AMOUNT"]
+    },
+
+    "creditedAccount":  {
+        "type": "string"
+    },
+
+    "statusAuth": {
+        "type": "string",
+        "enum": ["null", "SUCCESS", "FAILURE"]
+    },
+
+    "status": {
+        "type": "string",
+        "enum": ["ATTEMPT", "SUCCESS", "FAILURE", "TIMEOUT"]
+    }
+}

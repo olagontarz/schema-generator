@@ -4,7 +4,7 @@
     },
 
     "userAI2": {
-        "type": "string"
+        "type": "string"                                                                                                                                                                                                                                   
     },
 
     "activationPath": {

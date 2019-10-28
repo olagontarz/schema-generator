@@ -1,0 +1,84 @@
+{   
+    "userId": {
+        "type": "string"
+    },
+
+    "userAI2": {
+        "type": "string"
+    },
+
+    "shortFundName": {
+        "type": "string"
+    },
+
+    "value": {
+        "type": "string"
+    },
+
+    "idmId": {
+        "type": "string"
+    },
+
+    "confirmationType": {
+        "type": "string",
+        "enum": ["PAPER", "ELECTRONIC"]
+    },
+
+    "currency": {
+        "type": "string"
+    },
+
+    "email": {
+        "type": "string"
+    },
+            
+    "date": {
+        "type": "string",
+        "format": "date"
+    },
+
+    "outOfMarketStatement":  {
+        "type": "string",
+        "enum": ["true", "false"]
+    },
+
+    "noMarketStatement":  {
+        "type": "string",
+        "enum": ["true", "false"]
+    },
+
+    "marketingProcessingConsent":  {
+        "type": "string",
+        "enum": ["true", "false"]
+    },
+
+    "electroMarketingConsent":  {
+        "type": "string",
+        "enum": ["true", "false"]
+    },
+
+    "directMarketingConsent":  {
+        "type": "string",
+        "enum": ["true", "false"]
+    },
+
+    "type":  {
+        "type": "string",
+        "enum": ["AMOUNT", "UNITS_AMOUNT"]
+    },
+
+    "conversionType":  {
+        "type": "string",
+        "enum": ["ALL", "PART"]
+    },
+
+    "statusAuth": {
+        "type": "string",
+        "enum": ["null", "SUCCESS", "FAILURE"]
+    },
+
+    "status": {
+        "type": "string",
+        "enum": ["ATTEMPT", "SUCCESS", "FAILURE", "TIMEOUT"]
+    }
+}
