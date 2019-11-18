@@ -71,6 +71,10 @@ const config = {
     'idm-channel-blocking': './events/idm-channel-blocking.json',
     'idm-channel-unblocking': './events/idm-channel-unblocking.json',
 
+    'idm-channel-reset': './events/idm-channel-reset.json',
+    'idm-channel-close': './events/idm-channel-close.json',
+
+
     'login-sidoma': './events/login-sidoma.json',
 
     // logs2.xlsx
