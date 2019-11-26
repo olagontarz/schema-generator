@@ -1,0 +1,31 @@
+{   
+    "login": {
+        "type": "string"
+    },
+
+    "userId": {
+        "type": "string"
+    },
+
+    "userAI2": {
+        "type": "string"
+    },
+
+    "newMethod": {
+        "type": "string"
+    },
+
+    "deviceId": {
+        "type": "string"
+    },
+
+    "statusAuth": {
+        "type": "string",
+        "enum": ["null", "SUCCESS", "FAILURE"]
+    },
+
+    "status": {
+        "type": "string",
+        "enum": ["ATTEMPT", "SUCCESS", "FAILURE", "TIMEOUT"]
+    }
+} 
