@@ -1,0 +1,46 @@
+{   
+    "userId": {
+        "type": "string"
+    },
+
+    "userAI2": {
+        "type": "string"
+    },
+
+    "questions": {
+        "type": "string"
+    },
+
+    "iAandDPMService": {
+        "type": "string",
+        "enum": ["true", "false"]
+    },
+
+    "rTOService": {
+        "type": "string",
+        "enum": ["true", "false"]
+    },
+
+    "orderExecutionService": {
+        "type": "string",
+        "enum": ["true", "false"]
+    },
+
+    "profile": {
+        "type": "string",
+        "enum": ["CONSERVATIVE", "STABLE", "BALANCED", "DYNAMIC"]
+    },
+
+    "assessmentId": {
+        "type": "string"
+    },
+
+    "category": {
+        "type": "string"
+    },
+
+    "status": {
+        "type": "string",
+        "enum": ["ATTEMPT", "SUCCESS", "FAILURE", "TIMEOUT"]
+    }
+}

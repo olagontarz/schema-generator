@@ -74,7 +74,6 @@ const config = {
     'idm-channel-reset': './events/idm-channel-reset.json',
     'idm-channel-close': './events/idm-channel-close.json',
 
-
     'login-sidoma': './events/login-sidoma.json',
 
     // logs2.xlsx
@@ -95,6 +94,20 @@ const config = {
 
     'login-method-change': './events/login-method-change.json',
     'authorization-method-change': './events/authorization-method-change.json',
+
+
+    'mifid-questionnarie-approval': './events/mifid-questionnarie-approval.json',
+    'mifid-questionnarie-denial': './events/mifid-questionnarie-denial.json',
+    'mifid-result-approval': './events/mifid-result-approval.json',
+    'mifid-result-reject': './events/mifid-result-reject.json',
+
+    'contact-token-generate-chat': './events/contact-token-generate-chat.json',
+    'contact-token-generate-video': './events/contact-token-generate-video.json',
+
+    'contact-get-conversations': './events/contact-get-conversations.json',
+    'contact-get-blog-posts': './events/contact-get-blog-posts.json',
+    'contact-get-legal-documents-attachment': './events/contact-get-legal-documents-attachment.json',
+    'contact-get-legal-documents': './events/contact-get-legal-documents.json',
 
   },
 };
