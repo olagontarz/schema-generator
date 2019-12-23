@@ -96,8 +96,8 @@ const config = {
     'authorization-method-change': './events/authorization-method-change.json',
 
 
-    'mifid-questionnarie-approval': './events/mifid-questionnarie-approval.json',
-    'mifid-questionnarie-denial': './events/mifid-questionnarie-denial.json',
+    'mifid-questionnarie-approval': './events/mifid-questionnaire-approval.json',
+    'mifid-questionnarie-denial': './events/mifid-questionnaire-denial.json',
     'mifid-result-approval': './events/mifid-result-approval.json',
     'mifid-result-reject': './events/mifid-result-reject.json',
 
